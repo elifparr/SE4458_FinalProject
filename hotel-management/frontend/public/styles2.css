@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header #navButtons {
+    display: flex;
+    gap: 10px;
+}
+
+header #navButtons button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header #navButtons button:hover {
+    background-color: #0056b3;
+}
+
+header #navButtons span {
+    background-color: transparent;
+    cursor: default;
+    padding: 0;
+    color: white; 
+}
+
+main {
+    padding: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+}
+
+.search-form input,
+.search-form button {
+    padding: 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
+#resultsSection {
+    margin-top: 20px;
+}
+
+.result {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+.result img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 24px;
+    cursor: pointer; 
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.details .rating {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0ad4e;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.details .original-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.details .discounted-price {
+    color: green;
+    font-weight: bold;
+}
+
+.details .result-map {
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.login-button {
+    background-color: #28a745; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background-color: #218838; 
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otel Arama</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Hotel Management</div>
+            <div id="navButtons"></div>
+        </nav>
+    </header>
+    <main>
+        <section id="searchSection">
+            <form id="searchForm" class="search-form">
+                <input type="text" id="destination" name="destination" placeholder="Varış Noktası" required>
+                <input type="date" id="startDate" name="startDate" required>
+                <input type="date" id="endDate" name="endDate" required>
+                <input type="number" id="people" name="people" placeholder="Kişi Sayısı" required>
+                <button type="submit">Ara</button>
+            </form>
+        </section>
+        <section id="resultsSection" style="display: none;">
+            <div id="resultsContainer"></div>
+        </section>
+        <div id="loadingMessage" class="loading" style="display: none;">Aranıyor...</div>
+    </main>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="homepage.js"></script>
+</body>
+</html>
